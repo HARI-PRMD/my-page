@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Hari's Website</title>
+        <!-- <meta name=viewport content='width=559'> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <!-- Dancing Script Font from Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lora&family=Open+Sans&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet"> 
+        <!-- Josefin Sans Font from Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Josefin+Sans&family=Lora&family=Open+Sans&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet"> 
+        <!-- Lato Font from Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet"> 
+        <!-- Sandwich Bar -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Adding Emojis -->
+        <meta charset="UTF-8">
+    </head>
+    
+    <body>
+        <!-- Top Navigation Bar -->
+        <div class="topnav" id="myTopnav">
+            <a href="#Home" class="active">Home</a>
+            <a href="#AboutMe">About Me</a>
+            <a href="#MusicProduction">Music Production</a>
+            <a href="#Games">Games List</a>
+            <a href="#Links">My Links</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <br />
+        <div class="white-chocolate-block" id="Home">
+            <br />
+            <img src="assets/hehe_pfp.png" alt="PFP" class="pfp">    
+            <h1>Welcome to Hari's Page</h1>
+            <div>
+                <p>Hello, I'm Hari, more popularly known as "Hehe" online &#128075.</p>
+                <p>I am a software engineer in the making at UNSW and I have quite a 
+                    few hobbies I've been working on and enjoying over the past few years!
+                    (lockdown hobbies hehe &#127747)</p>
+                </div>
+            </div>
+            <br />
+            <div class="dark-chocolate-block" id="AboutMe">
+                <h1 style="color:#fffdfa;">About Me</p>
+                <p style="color:#fffdfa; text-align:left;">Name: Hari Pramod</p>
+                <p style="color:#fffdfa; text-align:left;">Age: 18</p>
+                <p style="color:#fffdfa; text-align:left;">Degree: Bachelors of Software Engineering (Hons)</p>
+                <p style="color:#fffdfa; text-align:left;">Cool Stuff: I Make Music</p>
+            </div>
+            <br />
+            <div class="white-chocolate-block" id="MusicProduction">
+                <h1 class="inside-white-block-h1">&#127926 Music Production &#127926</h1>
+                <p class="inside-white-block-p">Playing around with Sound Design on Cool Synths...</p>
+                <p class="inside-white-block-p">I released my first song on May 31st 2022, during my Term 1 break.
+                    At the time I was more focused on making my own sounds, and bringing my songs to completion. 
+                    This led me to start and finish this project within 20 hours using only my sound design! (Speedrun% Hehe). 
+                </p>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/kO0FGv6SI78" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                    picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <br />
+            <div class="dark-chocolate-block" id="Games">
+                <p class="inside-block-h1">&#127918 My Games List &#127918</p>
+                <p class="inside-block-p">(Pssst - Hover/Click on the game titles &#128521) </p>
+                <button class="game-box-button">
+                    <div class="game-box">
+                        <div class="card">
+                            <h1 class="card-text">osu!</h1>
+                            <img src="assets/osu.gif" class="img-top" alt="Card Front">
+                        </div>
+                    </div>
+                </button>
+                <button class="game-box-button">
+                    <div class="game-box">
+                        <div class="card">
+                            <h1 class="card-text">Subnautica</h1>
+                            <img src="assets/subnautica.gif" class="img-top" alt="Card Front">
+                        </div>
+                    </div>
+                </button>
+                <button class="game-box-button">
+                    <div class="game-box">
+                        <div class="card">
+                            <h1 class="card-text">Valorant</h1>
+                            <img src="assets/valorant.gif" class="img-top" alt="Card Front">
+                        </div>
+                    </div>
+                </button>
+                <button class="game-box-button">
+                    <div class="game-box">
+                        <div class="card">
+                            <h1 class="card-text">Modern Warfare 3</h1>
+                            <img src="assets/modern-warfare.gif" class="img-top" alt="Card Front">
+                        </div>
+                    </div>
+                </button>
+                <button class="game-box-button">
+                    <div class="game-box">
+                        <div class="card">
+                            <h1 class="card-text">Minecraft</h1>
+                            <img src="assets/minecraft.gif" class="img-top" alt="Card Front">
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <br />
+            <div class="links" id="Links">
+                <div class="wrapper">
+                    <button class="button" onclick="tooltipFunction()" onmouseout="outFunc()">
+                        Discord
+                        <span class="tooltiptext" id="myTooltip"></span>
+                    </button>
+                    <button class="button" onclick="window.open('https://www.youtube.com/channel/UCnUVavOW81sOO9h3L4xFb2w', '_blank');" type="button">
+                        Youtube
+                    </button>
+                    <button class="button" onclick="window.open('https://soundcloud.com/hehe-he-127547829', '_blank');" type="button">
+                        SoundCloud
+                    </button>
+                    <button class="button" onclick="window.open('https://osu.ppy.sh/users/28231348', '_blank');" type="button">
+                        osu!
+                    </button>
+                    <button class="button" onclick="window.open('https://www.linkedin.com/in/hari-pramod-2b316b244/', '_blank');" type="button">
+                        LinkedIn
+                    </button>
+                    <button class="button" onclick="window.open('https://github.com/HARI-PRMD', '_blank');" type="button">
+                        GitHub
+                    </button>
+                </div>
+            </div>
+        </div>
+        <br />
+    </body>
+</html>
+    
