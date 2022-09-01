@@ -288,10 +288,13 @@ p {
 }
 
 .game-box-button {
-    display:inline-block;
-    padding: 0px;
-    width: 110%;
+    width: 100%;
+    min-width: 10px;
     max-width: 560px;
+    height: 100px;
+    min-height: 100px;
+    position: relative;
+    display: inline-block;
 
     cursor: pointer;
     text-align: center;
@@ -322,13 +325,14 @@ p {
     max-width: 560px;
     height: 100%;
     max-height: 100px;
-
+    
     object-fit: cover;
     border-radius: 10px;
 }
 
 .card:hover .img-top {
     display: inline;
+    max-width: 560px;
 }
 .card-text {
     font-family: 'Lato', sans-serif;
